@@ -1,0 +1,85 @@
+.experienceLabel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f3f6f7;
+  width: 100%;
+
+  > div {
+    margin-right: 20px;
+  }
+
+  .experienceTitleContainer {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+  }
+
+  &:hover {
+    background-color: #dfe2e7;
+  }
+}
+
+.publicResumeContainer {
+  box-shadow: 0px 28px 100px 0px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+
+  > .publicResumeHeader {
+    background-color: black;
+    padding: 10px;
+  }
+  .publicResumeExperience,
+  .publicResumeEducation {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #dee2e6;
+
+    &:hover {
+      border: none;
+      border-bottom: 1px solid #dee2e6;
+      margin-top: 0;
+      margin-left: 0;
+      z-index: 1;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+  .publicResumeTitle {
+    // font-weight: 700;
+    padding-left: 25px;
+    padding-top: 25px;
+    opacity: 0.7;
+  }
+  .publicResumeExpSelected {
+    margin: 0;
+  }
+  .p-25 {
+    padding: 25px;
+  }
+  .publicResumeContact {
+    font-size: 16px;
+    margin: 0;
+  }
+  .publicResumeFullname {
+    font-size: 57px;
+    font-weight: 700;
+  }
+  .publicResumeJobTitle {
+    font-size: 30px;
+    font-weight: 700;
+    opacity: 0.7;
+  }
+}
+
+.publicResumeExperienceContainer,
+.publicResumeEducationContainer {
+  padding: 0;
+
+  &:last-child {
+    border: none;
+  }
+}
